@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-import Form from './Form';
+import FormTrack from './FormTrack';
+import TrackingEvents from './components/TrackingEvents';
 
-function App() {
-  return (
-    <div className="App">
-      <Form></Form>
-    </div>
-  );
+
+class App extends Component{
+
+  render(){
+    return (
+      <div className="App">
+        <FormTrack></FormTrack>
+        <TrackingEvents></TrackingEvents>
+      </div>
+    );
+  }
 }
 
 export default App;
